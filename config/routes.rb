@@ -1,5 +1,6 @@
-Rails.application.routes.draw do
-resources :movies, only: [:index, :show]
-root to: 'movies#index'
-end
+# frozen_string_literal: true
 
+Rails.application.routes.draw do
+  resources :movies, only: %i[index show]
+  root to: 'movies#index'
+end
