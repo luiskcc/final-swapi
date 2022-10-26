@@ -1,2 +1,53 @@
-<h1>Movie#show</h1>
-<p>Find me in app/views/movie/show.html.erb</p>
+
+<header>
+    <h1>
+        Movie <%= @movie["title"]%>
+    </h1>
+</header>
+
+<main>
+
+
+
+<h3>Episode</h3>
+<p><%= @movie["episode_id"]%></p>
+
+<h3>Director</h3>
+<p><%= @movie["director"]%></p>
+
+
+<h3>Producer</h3>
+<p><%= @movie["producer"]%></p>
+
+
+<h3>Release date</h3>
+<p><%= @movie["release_date"]%></p>
+
+
+<h3>Characters</h3>
+<p><%= @movie["characters"]%></p>
+
+
+<%# <h3>Planets</h3>
+<% @planets.each do |planet|%>
+    <%= link_to planet['name'], planet['url'] %> <br>    
+<% end %> %>
+
+<h3>Starships</h3>
+<p><%= @movie["starships"]%></p>
+
+<h3>Vehicles</h3>
+<p><%= @movie["vehicles"]%></p>
+
+<h3>Species</h3>
+<p><%= @movie["species"]%></p>
+
+<h3>Created</h3>
+<p><%= @movie["created"]%></p>
+
+<h3>Edited</h3>
+<p><%= @movie["edited"]%></p>
+
+<h3>Url</h3>
+<p><%= @movie["url"]%></p>
+</main>

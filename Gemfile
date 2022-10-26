@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'httparty', '~> 0.20.0'
 
 gem 'rubocop-rails', '~> 2.17'
+
+gem "pry", "~> 0.14.1"

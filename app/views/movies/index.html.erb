@@ -1,2 +1,34 @@
-<h1>Movie#index</h1>
-<p>Find me in app/views/movie/index.html.erb</p>
+
+<header>
+    <h1>
+        All movies
+    </h1>
+</header>
+
+<main>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <% @movies.each do |movie|%>
+      <tr>
+          <td><%= movie['episode_id'] %></td>
+          <td><%= movie['title']%></td>
+          <td>
+            <%= link_to "Link", Rails.application.routes.url_helpers.movie_path(movie['episode_id']) %>
+          </td>
+      </tr>
+    <% end %>
+
+    
+  </tbody>
+</table>
+</main>
+
+
